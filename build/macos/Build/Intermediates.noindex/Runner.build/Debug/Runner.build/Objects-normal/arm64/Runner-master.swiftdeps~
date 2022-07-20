@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)"
+options: "9a1a92567da5ba281853eeb8aa848932366c22d4c906cd6a3183548b7eafb970"
+build_start_time: [1657656180, 627554893]
+build_end_time: [1657656185, 803618907]
+inputs:
+  "/Users/austin/Documents/Fluter Projects/ascetic/macos/Flutter/GeneratedPluginRegistrant.swift": [1657656157, 912402153]
+  "/Users/austin/Documents/Fluter Projects/ascetic/macos/Runner/AppDelegate.swift": [1652294199, 0]
+  "/Users/austin/Documents/Fluter Projects/ascetic/macos/Runner/MainFlutterWindow.swift": [1652294199, 0]

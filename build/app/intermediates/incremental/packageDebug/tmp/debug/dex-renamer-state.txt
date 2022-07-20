@@ -1,0 +1,4 @@
+#Mon Jul 18 12:07:17 CDT 2022
+base.0=/Users/austin/Documents/Fluter Projects/ascetic/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+renamed.0=classes.dex
+path.0=classes.dex
