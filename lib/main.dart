@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:ascetic/tools/themes.dart';
-import 'package:ascetic/views/login_view.dart';
+import 'package:ascetic/views/home_view.dart';
 
 main() {
   runApp(const Ascetic());
@@ -16,7 +16,7 @@ class Ascetic extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: Themes.light(),
       darkTheme: Themes.dark(),
-      home: const LoginPage(),
+      home: const HomePage(),
     );
   }
 }

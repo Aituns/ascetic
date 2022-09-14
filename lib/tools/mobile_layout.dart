@@ -18,33 +18,33 @@ class _MobileLayoutState extends State<MobileLayout> {
     return Column(
       children: [
         Expanded(child: globals.pages[globals.selectedIndex]),
-        NavigationBar(
-          selectedIndex: globals.selectedIndex,
-          onDestinationSelected: (int index) {
+        BottomNavigationBar(
+          currentIndex: globals.selectedIndex,
+          onTap: (int index) {
             setState(
               () {
                 globals.selectedIndex = index;
               },
             );
           },
-          destinations: const <NavigationDestination>[
-            NavigationDestination(
+          items: const <BottomNavigationBarItem>[
+            BottomNavigationBarItem(
               icon: Icon(FontAwesomeIcons.bookBible),
               label: 'Bible',
             ),
-            NavigationDestination(
+            BottomNavigationBarItem(
               icon: Icon(FontAwesomeIcons.personPraying),
               label: 'Pray',
             ),
-            NavigationDestination(
+            BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.check_mark_circled_solid),
               label: 'Disciplines',
             ),
-            NavigationDestination(
+            BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.text_bubble_fill),
               label: 'Messaging',
             ),
-            NavigationDestination(
+            BottomNavigationBarItem(
               icon: Icon(CupertinoIcons.profile_circled),
               label: 'Profile',
             ),

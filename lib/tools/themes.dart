@@ -1,68 +1,63 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Themes {
   static ThemeData light() {
     return ThemeData(
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: Colors.white,
-        foregroundColor: CupertinoColors.black,
+        foregroundColor: Colors.grey[700],
       ),
-      scaffoldBackgroundColor: CupertinoColors.lightBackgroundGray,
+      scaffoldBackgroundColor: Colors.grey[200],
       textTheme: const TextTheme(
-        labelMedium: TextStyle(color: CupertinoColors.black),
-        bodyMedium: TextStyle(color: CupertinoColors.black),
+        labelMedium: TextStyle(color: Colors.black),
+        bodyMedium: TextStyle(color: Colors.black),
       ),
-      navigationBarTheme: const NavigationBarThemeData(
-        backgroundColor: CupertinoColors.white,
-        indicatorColor: Color(0xFFFE9B81),
-        //iconTheme: IconThemeData()
-        // unselectedIconTheme: IconThemeData(color: CupertinoColors.systemGrey),
-        // selectedIconTheme: IconThemeData(color: Color(0xFFFE9B81)),
-        // labelType: NavigationRailLabelType.none,
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: Colors.white,
+        unselectedIconTheme: IconThemeData(color: Colors.grey[700]),
+        selectedIconTheme: const IconThemeData(color: Color(0xFFFE9B81)),
+        showUnselectedLabels: false,
+        showSelectedLabels: false,
+        type: BottomNavigationBarType.fixed,
+        elevation: 0,
       ),
       navigationRailTheme: const NavigationRailThemeData(
-        backgroundColor: CupertinoColors.white,
-        unselectedIconTheme: IconThemeData(color: CupertinoColors.black),
+        backgroundColor: Colors.white,
+        unselectedIconTheme: IconThemeData(color: Colors.black),
         selectedIconTheme: IconThemeData(color: Color(0xFFFE9B81)),
         labelType: NavigationRailLabelType.none,
+        elevation: 0,
       ),
     );
   }
 
   static ThemeData dark() {
     return ThemeData(
-      appBarTheme: const AppBarTheme(
+      appBarTheme: AppBarTheme(
         backgroundColor: Colors.black,
-        foregroundColor: CupertinoColors.white,
+        foregroundColor: Colors.grey[400],
       ),
-      scaffoldBackgroundColor: CupertinoColors.darkBackgroundGray,
+      scaffoldBackgroundColor: Colors.grey[800],
       textTheme: const TextTheme(
-        labelMedium: TextStyle(color: CupertinoColors.white),
-        bodyMedium: TextStyle(color: CupertinoColors.white),
-        titleLarge: TextStyle(
-            color: CupertinoColors.white, fontFamily: 'Times New Roman'),
+        labelMedium: TextStyle(color: Colors.black),
+        bodyMedium: TextStyle(color: Colors.black),
       ),
-      bottomNavigationBarTheme: const BottomNavigationBarThemeData(
-        unselectedIconTheme: IconThemeData(
-          color: CupertinoColors.white,
-        ),
-        selectedIconTheme: IconThemeData(color: Color(0xFFFE9B81)),
-        showSelectedLabels: false,
+      bottomNavigationBarTheme: BottomNavigationBarThemeData(
+        backgroundColor: Colors.black,
+        unselectedIconTheme: IconThemeData(color: Colors.grey[400]),
+        selectedIconTheme: const IconThemeData(color: Color(0xFFFE9B81)),
         showUnselectedLabels: false,
+        showSelectedLabels: false,
+        type: BottomNavigationBarType.fixed,
+        elevation: 0,
       ),
       navigationRailTheme: const NavigationRailThemeData(
-        useIndicator: false,
-        backgroundColor: CupertinoColors.black,
-        indicatorColor: CupertinoColors.white,
+        backgroundColor: Colors.black,
+        unselectedIconTheme: IconThemeData(color: Colors.white),
         selectedIconTheme: IconThemeData(color: Color(0xFFFE9B81)),
-        unselectedIconTheme: IconThemeData(
-          color: CupertinoColors.white,
-        ),
         labelType: NavigationRailLabelType.none,
+        elevation: 0,
       ),
-      canvasColor: CupertinoColors.black,
-      splashFactory: NoSplash.splashFactory,
     );
   }
 }
